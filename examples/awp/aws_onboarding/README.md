@@ -49,6 +49,7 @@ func main() {
 			MaxConcurrenceScansPerRegion: 1,
 			SkipFunctionAppsScan:         true,
 			InAccountScannerVPC:          "ManagedByAWP",
+			ScanAWSLicensedImages:        false,
 			CustomTags:                   map[string]string{"test": "testValue"},
 		},
 	}
@@ -82,6 +83,7 @@ func main() {
 		MaxConcurrenceScansPerRegion: 6,
 		SkipFunctionAppsScan:         false,
 		InAccountScannerVPC:          "ManagedByAWP",
+		ScanAWSLicensedImages:        false,
 		CustomTags:                   map[string]string{"newTag": "newValue"},
 	}
 
